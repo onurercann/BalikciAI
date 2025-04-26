@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Balıkçı AI Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PDF.js ana kütüphane (jsDelivr üzerinden) -->
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+  <!-- Tesseract.js (OCR için) -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.5/dist/tesseract.min.js"></script>
+  <script>
+    if (window.pdfjsLib) {
+      // Worker script yolunu ayarlıyoruz
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.worker.min.js';
+    } else {
+      console.error('pdfjsLib yüklenemedi!');
+    }
+  </script>
+</head>
+<body>
+  <div id="chat-wrapper">
+    <header><h1>Balıkçı AI</h1></header>
+    <p id="upload-status">Menü yükleniyor...</p>
+    <div id="chat-container"></div>
+    <footer id="controls">
+      <button id="btnSend">Gönder</button>
+      <input type="text" id="user-input" placeholder="Sorunuzu yazın..." />
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('btnSend').addEventListener('click', sendMessage);
+    document.getElementById('user-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') sendMessage();
+    });
+  </script>
+</body>
+</html>

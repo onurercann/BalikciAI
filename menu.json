@@ -1,0 +1,12 @@
+{
+    "bugun": [
+      { "isim": "Çupra Izgara",    "fiyat": "150₺" },
+      { "isim": "Levrek Buğulama", "fiyat": "160₺" },
+      { "isim": "Lüfer Tava",      "fiyat": "140₺" },
+      { "isim": "Palamut Izgara",  "fiyat": "130₺" }
+    ],
+    "taze": [
+      "Çupra", "Lüfer", "Palamut"
+    ]
+  }
+  

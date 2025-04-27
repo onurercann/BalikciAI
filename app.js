@@ -64,7 +64,7 @@ async function loadPrompt() {
 window.addEventListener('DOMContentLoaded', loadMenuPdf);
 
 // Lokal Ollama API URL’i (ngrok kaldırıldı)
-const API_URL = 'http://localhost:11436/api/generate';
+const API_URL = "/api/generate";
 
 // Mesaj gönderme fonksiyonu
 async function sendMessage() {

@@ -1,5 +1,6 @@
 // api/generate.js
-import { Configuration, OpenAIApi } from "openai";
+
+import OpenAI from "openai";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -7,19 +8,25 @@ export default async function handler(req, res) {
   }
   try {
     const { prompt, model } = req.body;
-    const config = new Configuration({ apiKey: process.env.OPENAI_API_KEY });
-    const openai = new OpenAIApi(config);
-
-    const completion = await openai.createChatCompletion({
-      model,                        // örn. "gpt-4o" veya "gpt-3.5-turbo"
-      messages: [{ role: "user", content: prompt }],
-      temperature: 0.5
+    // OpenAI istemcisini başlat
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY
     });
 
-    const text = completion.data.choices[0].message.content;
+    // Chat tamamlamayı oluştur
+    const completion = await openai.chat.completions.create({
+      model: model || "gpt-3.5-turbo",
+      messages: [
+        { role: "system", content: "Sen bir restoran bilgi asistanısın. Sadece Türkçe konuş." },
+        { role: "user", content: prompt }
+      ]
+    });
+
+    // Yanıtı geri döndür
+    const text = completion.choices[0].message.content;
     res.status(200).json({ response: text });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: err.message || "Beklenmeyen hata" });
+    console.error("OpenAI hatası:", err);
+    res.status(500).json({ error: err.message || "Beklenmeyen sunucu hatası" });
   }
 }

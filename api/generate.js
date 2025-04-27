@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       if (!hfToken) throw new Error("HF_TOKEN tanımlı değil!");
   
       // Seçeceğiniz Gemma modeli
-      const modelId = "google/gemma-2-7b-it";
+      const modelId = "google/gemma-2-9b-it";
   
       // Hugging Face Inference API çağrısı
       const hfRes = await fetch(

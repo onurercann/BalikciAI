@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       }
   
       // Kullanmak istediğiniz Gemma modelinin doğru ID'si
-      const modelId = "google/gemma-2-9b-it";
+      const modelId = "google/gemma-2-2b-it";
   
       // Hugging Face Inference API çağrısı
       const hfRes = await fetch(

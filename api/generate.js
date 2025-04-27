@@ -1,32 +1,43 @@
 // api/generate.js
-
-import OpenAI from "openai";
-
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Sadece POST kabul edilir" });
+    if (req.method !== "POST") {
+      return res.status(405).json({ error: "Sadece POST kabul edilir" });
+    }
+    try {
+      const { prompt } = req.body;
+      const hfToken = process.env.HF_TOKEN;
+      if (!hfToken) throw new Error("HF_TOKEN tanımlı değil!");
+  
+      // Seçeceğiniz Gemma modeli
+      const modelId = "google/gemma-2-7b-it";
+  
+      // Hugging Face Inference API çağrısı
+      const hfRes = await fetch(
+        `https://api-inference.huggingface.co/models/${modelId}`, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${hfToken}`,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          inputs: prompt,
+          options: { wait_for_model: true }
+        })
+      });
+  
+      if (!hfRes.ok) {
+        const errText = await hfRes.text();
+        return res.status(hfRes.status).json({ error: errText });
+      }
+  
+      const hfData = await hfRes.json();
+      // HF Inference API, çıktıyı [ { generated_text: "..." } ] formatında döner
+      const text = (hfData[0]?.generated_text || "").trim();
+      return res.status(200).json({ response: text });
+  
+    } catch (err) {
+      console.error("Gemma hatası:", err);
+      res.status(500).json({ error: err.message || "Beklenmeyen hata" });
+    }
   }
-  try {
-    const { prompt, model } = req.body;
-    // OpenAI istemcisini başlat
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY
-    });
-
-    // Chat tamamlamayı oluştur
-    const completion = await openai.chat.completions.create({
-      model: model || "gpt-3.5-turbo",
-      messages: [
-        { role: "system", content: "Sen bir restoran bilgi asistanısın. Sadece Türkçe konuş." },
-        { role: "user", content: prompt }
-      ]
-    });
-
-    // Yanıtı geri döndür
-    const text = completion.choices[0].message.content;
-    res.status(200).json({ response: text });
-  } catch (err) {
-    console.error("OpenAI hatası:", err);
-    res.status(500).json({ error: err.message || "Beklenmeyen sunucu hatası" });
-  }
-}
+  

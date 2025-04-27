@@ -1,4 +1,5 @@
 // api/generate.js
+
 export default async function handler(req, res) {
     if (req.method !== "POST") {
       return res.status(405).json({ error: "Sadece POST kabul edilir" });
@@ -6,24 +7,28 @@ export default async function handler(req, res) {
     try {
       const { prompt } = req.body;
       const hfToken = process.env.HF_TOKEN;
-      if (!hfToken) throw new Error("HF_TOKEN tanımlı değil!");
+      if (!hfToken) {
+        throw new Error("Hugging Face token (HF_TOKEN) tanımlı değil!");
+      }
   
-      // Seçeceğiniz Gemma modeli
+      // Kullanmak istediğiniz Gemma modelinin doğru ID'si
       const modelId = "google/gemma-2-9b-it";
   
       // Hugging Face Inference API çağrısı
       const hfRes = await fetch(
-        `https://api-inference.huggingface.co/models/${modelId}`, {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${hfToken}`,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          inputs: prompt,
-          options: { wait_for_model: true }
-        })
-      });
+        `https://api-inference.huggingface.co/models/${modelId}`,
+        {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${hfToken}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            inputs: prompt,
+            options: { wait_for_model: true }
+          })
+        }
+      );
   
       if (!hfRes.ok) {
         const errText = await hfRes.text();
@@ -31,10 +36,9 @@ export default async function handler(req, res) {
       }
   
       const hfData = await hfRes.json();
-      // HF Inference API, çıktıyı [ { generated_text: "..." } ] formatında döner
       const text = (hfData[0]?.generated_text || "").trim();
-      return res.status(200).json({ response: text });
   
+      return res.status(200).json({ response: text });
     } catch (err) {
       console.error("Gemma hatası:", err);
       res.status(500).json({ error: err.message || "Beklenmeyen hata" });

@@ -63,65 +63,56 @@ async function loadPrompt() {
 // Sayfa yüklendiğinde menüyü oku
 window.addEventListener('DOMContentLoaded', loadMenuPdf);
 
-// Lokal Ollama API URL’i (ngrok kaldırıldı)
-const API_URL = "/api/generate";
+// API endpoint (Vercel Function)
+const API_URL = '/api/generate';
 
 // Mesaj gönderme fonksiyonu
 async function sendMessage() {
-    const userInput = document.getElementById('user-input').value.trim();
-    if (!userInput) return;
-  
-    const chat = document.getElementById('chat-container');
-    // Kullanıcı mesajını bas
-    chat.innerHTML += `<div class="message user">${userInput}</div>`;
-    document.getElementById('user-input').value = '';
-  
-    // Prompt şablonunu yükle ve doldur
-    const template = await loadPrompt();
-    const finalPrompt = template
-      .replace('{{menuContent}}', menuText)
-      .replace('{{userInput}}', userInput);
-  
+  const userInput = document.getElementById('user-input').value.trim();
+  if (!userInput) return;
+
+  const chat = document.getElementById('chat-container');
+  chat.innerHTML += `<div class="message user">${userInput}</div>`;
+  document.getElementById('user-input').value = '';
+
+  const template = await loadPrompt();
+  const finalPrompt = template
+    .replace('{{menuContent}}', menuText)
+    .replace('{{userInput}}', userInput);
+
+  try {
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt: finalPrompt })
+    });
+
+    // Ham cevabı debug için logla ve ekrana bas
+    const text = await res.text();
+    console.log('➜ API Raw Response:', text);
+    chat.innerHTML += `<div class="message bot error"><pre style="white-space: pre-wrap;">${text}</pre></div>`;
+
+    let data;
     try {
-      const res = await fetch(API_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          // Vercel Function’da default modele bakılıyor, 
-          // ama buraya açıkça bir model de yazabilirsiniz:
-          model: 'gpt-3.5-turbo',
-          prompt: finalPrompt,
-          stream: false
-        })
-      });
-  
-      // JSON parse etmeden önce HTTP durumunu kontrol et
-      const text = await res.text();
-      let data;
-      try {
-        data = JSON.parse(text);
-      } catch {
-        // JSON değilse direkt HTML ya da hata döndü
-        console.error('Beklenmeyen yanıt:', text);
-        chat.innerHTML += `<div class="message bot error">Sunucudan beklenmeyen yanıt alındı.</div>`;
-        chat.scrollTop = chat.scrollHeight;
-        return;
-      }
-  
-      if (!res.ok || data.error) {
-        // Hem HTTP hatası hem OpenAI fonksiyon hatası kontrolü
-        console.error('API Hatası:', data.error || res.statusText);
-        chat.innerHTML += `<div class="message bot error">Hata: ${data.error || res.statusText}</div>`;
-      } else {
-        // Başarılı cevap
-        chat.innerHTML += `<div class="message bot">${data.response}</div>`;
-      }
+      data = JSON.parse(text);
+    } catch {
+      console.error('Beklenmeyen yanıt:', text);
+      chat.innerHTML += `<div class="message bot error">Sunucudan beklenmeyen yanıt alındı.</div>`;
       chat.scrollTop = chat.scrollHeight;
-  
-    } catch (e) {
-      console.error('Fetch hatası:', e);
-      chat.innerHTML += `<div class="message bot error">Hata: ${e.message}</div>`;
-      chat.scrollTop = chat.scrollHeight;
+      return;
     }
+
+    if (!res.ok || data.error) {
+      console.error('API Hatası:', data.error || res.statusText);
+      chat.innerHTML += `<div class="message bot error">Hata: ${data.error || res.statusText}</div>`;
+    } else {
+      chat.innerHTML += `<div class="message bot">${data.response}</div>`;
+    }
+    chat.scrollTop = chat.scrollHeight;
+
+  } catch (e) {
+    console.error('Fetch hatası:', e);
+    chat.innerHTML += `<div class="message bot error">Hata: ${e.message}</div>`;
+    chat.scrollTop = chat.scrollHeight;
   }
-  
+}

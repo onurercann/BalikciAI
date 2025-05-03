@@ -68,13 +68,23 @@ const API_URL = '/api/generate';
 
 // Mesaj gönderme fonksiyonu
 async function sendMessage() {
-  const userInput = document.getElementById('user-input').value.trim();
+  const inputField = document.getElementById('user-input');
+  const userInput = inputField.value.trim();
   if (!userInput) return;
 
   const chat = document.getElementById('chat-container');
+  // Kullanıcı mesajını ekle
   chat.innerHTML += `<div class="message user">${userInput}</div>`;
-  document.getElementById('user-input').value = '';
+  inputField.value = '';
 
+  // Eğer sadece "selam" desenindeki bir selamlamaysa:
+  if (/^selam[!,.]?$/i.test(userInput)) {
+    chat.innerHTML += `<div class="message bot">Merhaba! Size nasıl yardımcı olabilirim?</div>`;
+    chat.scrollTop = chat.scrollHeight;
+    return;
+  }
+
+  // Aksi halde normal prompt akışı
   const template = await loadPrompt();
   const finalPrompt = template
     .replace('{{menuContent}}', menuText)

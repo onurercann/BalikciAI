@@ -1,7 +1,6 @@
 // api/generate.js
-import Cohere from "cohere-ai";
 
-Cohere.init(process.env.COHERE_API_KEY);
+import OpenAI from "openai";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -9,20 +8,25 @@ export default async function handler(req, res) {
   }
   try {
     const { prompt } = req.body;
-    // Cohere generate modeli: 'command' (soru-cevap, sohbet için optimize)
-    const response = await Cohere.generate({
-      model: "command",
-      prompt,
-      max_tokens: 200,       // Yanıt uzunluğunu sınırlandırın
-      temperature: 0.7,      // Yanıtın çeşitliliği
-      k: 0,                  // k-sampling: 0 = devre dışı
-      p: 0.75                // nucleus sampling
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY
     });
 
-    const text = response.body.generations[0].text.trim();
+    // Modeli GPT-4.1-nano olarak ayarladık
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4.1-nano",
+      messages: [
+        { role: "system", content: "Sen bir restoran bilgi asistanısın. Sadece Türkçe konuş." },
+        { role: "user", content: prompt }
+      ],
+      temperature: 0.5
+    });
+
+    const text = completion.choices[0].message.content;
     return res.status(200).json({ response: text });
   } catch (err) {
-    console.error("Cohere hatası:", err);
-    return res.status(500).json({ error: err.message || "Beklenmeyen hata" });
+    console.error("OpenAI hatası:", err);
+    const msg = err.message || "Beklenmeyen sunucu hatası";
+    return res.status(500).json({ error: msg });
   }
 }

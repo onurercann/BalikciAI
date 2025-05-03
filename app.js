@@ -87,20 +87,7 @@ async function sendMessage() {
       body: JSON.stringify({ prompt: finalPrompt })
     });
 
-    // Ham cevabı debug için logla ve ekrana bas
-    const text = await res.text();
-    console.log('➜ API Raw Response:', text);
-    chat.innerHTML += `<div class="message bot error"><pre style="white-space: pre-wrap;">${text}</pre></div>`;
-
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch {
-      console.error('Beklenmeyen yanıt:', text);
-      chat.innerHTML += `<div class="message bot error">Sunucudan beklenmeyen yanıt alındı.</div>`;
-      chat.scrollTop = chat.scrollHeight;
-      return;
-    }
+    const data = await res.json();
 
     if (!res.ok || data.error) {
       console.error('API Hatası:', data.error || res.statusText);

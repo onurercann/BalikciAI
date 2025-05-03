@@ -119,7 +119,7 @@ header {
     width: 100%;
     height: 100vh;
     border-radius: 0;
-    padding: 0 16px;    /* ← Yatay kenar boşluğu eklendi */
+    padding: 0 16px 16px;   /* üst:0, yanyana:16px, alt:16px */
     box-sizing: border-box;
   }
 

@@ -113,3 +113,26 @@ header {
 #controls button:hover {
   background: #005f8d;
 }
+
+@media (max-width: 600px) {
+  #chat-wrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  #controls {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  #controls input {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  #controls button {
+    width: 100%;
+  }
+}
+

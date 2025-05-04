@@ -1,55 +1,24 @@
 // app.js
 
-// PDF.js global kontrol
-const pdfjs = window.pdfjsLib || window['pdfjs-dist/build/pdf'];
-if (!pdfjs) {
-  console.error('PDF.js kütüphanesi bulunamadı.');
-}
-
+// Prompt ve menü içeriği saklanacak değişkenler
 let menuText = '';
 let promptTemplate = null;
 
-// Menü PDF'ini yükle ve metin çıkar
-async function loadMenuPdf() {
+// Menü API’sinden çekme fonksiyonu
+async function loadMenu() {
   const status = document.getElementById('upload-status');
   try {
-    const res = await fetch('menu.pdf');
-    const arrayBuffer = await res.arrayBuffer();
-    const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
-    let text = '';
-    for (let i = 1; i <= pdf.numPages; i++) {
-      const page = await pdf.getPage(i);
-      const content = await page.getTextContent();
-      text += content.items.map(item => item.str).join(' ') + '\n';
-    }
-    menuText = text;
-    status.textContent = 'Menü yüklendi ve PDF.js ile okundu.';
-  } catch (e) {
-    console.warn('PDF.js hatası, OCR fallback uygulanacak:', e.message);
-    await ocrFallback(status);
-  }
-}
+    status.textContent = 'Menü yükleniyor…';
+    const res = await fetch('/api/menu');
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || res.statusText);
 
-// OCR fallback: sayfaları canvas'a render edip Tesseract ile oku
-async function ocrFallback(status) {
-  status.textContent = 'PDF.js başarısız oldu, OCR fallback çalışıyor...';
-  const res = await fetch('menu.pdf');
-  const arrayBuffer = await res.arrayBuffer();
-  const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
-  let text = '';
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = document.createElement('canvas');
-    canvas.width = viewport.width;
-    canvas.height = viewport.height;
-    const ctx = canvas.getContext('2d');
-    await page.render({ canvasContext: ctx, viewport }).promise;
-    const { data: { text: ocrText } } = await Tesseract.recognize(canvas, 'tur');
-    text += ocrText + '\n';
+    menuText = data.menuText;
+    status.textContent = 'Menü başarıyla yüklendi.';
+  } catch (e) {
+    console.error('Menü yükleme hatası:', e);
+    status.textContent = `Menü yüklenirken hata: ${e.message}`;
   }
-  menuText = text;
-  status.textContent = 'Menü OCR ile okundu.';
 }
 
 // Prompt şablonunu yükle
@@ -60,31 +29,30 @@ async function loadPrompt() {
   return promptTemplate;
 }
 
-// Sayfa yüklendiğinde menüyü oku
-window.addEventListener('DOMContentLoaded', loadMenuPdf);
+// Sayfa yüklendiğinde menüyü çek
+window.addEventListener('DOMContentLoaded', loadMenu);
 
 // API endpoint (Vercel Function)
 const API_URL = '/api/generate';
 
 // Mesaj gönderme fonksiyonu
 async function sendMessage() {
-  const inputField = document.getElementById('user-input');
-  const userInput = inputField.value.trim();
+  const input = document.getElementById('user-input');
+  const userInput = input.value.trim();
   if (!userInput) return;
 
   const chat = document.getElementById('chat-container');
-  // Kullanıcı mesajını ekle
   chat.innerHTML += `<div class="message user">${userInput}</div>`;
-  inputField.value = '';
+  input.value = '';
 
-  // Eğer sadece "selam" desenindeki bir selamlamaysa:
+  // Selamlamaya özel yanıtlama
   if (/^selam[!,.]?$/i.test(userInput)) {
     chat.innerHTML += `<div class="message bot">Merhaba! Size nasıl yardımcı olabilirim?</div>`;
     chat.scrollTop = chat.scrollHeight;
     return;
   }
 
-  // Aksi halde normal prompt akışı
+  // Normal akış: prompt şablonunu oluştur
   const template = await loadPrompt();
   const finalPrompt = template
     .replace('{{menuContent}}', menuText)
@@ -113,3 +81,9 @@ async function sendMessage() {
     chat.scrollTop = chat.scrollHeight;
   }
 }
+
+// Buton ve Enter tuşu ile gönderme
+document.getElementById('btnSend').addEventListener('click', sendMessage);
+document.getElementById('user-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') sendMessage();
+});

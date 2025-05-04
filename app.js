@@ -9,22 +9,12 @@ async function loadMenu() {
   status.textContent = 'Menü yükleniyor…';
   try {
     const res = await fetch('/api/menu');
-    const text = await res.text();
-
-    // Gelen yanıt JSON mı diye kontrol
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch (err) {
-      throw new Error(`Menü JSON parse hatası:\n${text.slice(0,200)}${text.length>200?'…':''}`);
+    const data = await res.json();
+    if (!res.ok || data.error) {
+      throw new Error(data.error || `HTTP ${res.status}`);
     }
-
-    if (res.ok && data.menuText) {
-      menuText = data.menuText;
-      status.textContent = 'Menü başarıyla yüklendi.';
-    } else {
-      throw new Error(data.error || res.statusText);
-    }
+    menuText = data.menuText;
+    status.textContent = 'Menü başarıyla yüklendi.';
   } catch (e) {
     console.error('Menü yükleme hatası:', e);
     status.textContent = `Menü yüklenirken hata: ${e.message}`;
@@ -39,10 +29,13 @@ async function loadPrompt() {
   return promptTemplate;
 }
 
+// Sayfa yüklendiğinde menüyü çek
 window.addEventListener('DOMContentLoaded', loadMenu);
 
+// API endpoint
 const API_URL = '/api/generate';
 
+// Mesaj gönderme fonksiyonu
 async function sendMessage() {
   const input = document.getElementById('user-input');
   const userInput = input.value.trim();
@@ -52,12 +45,14 @@ async function sendMessage() {
   chat.innerHTML += `<div class="message user">${userInput}</div>`;
   input.value = '';
 
+  // Sadece “selam” mesajıysa önceden tanımlı yanıt ver
   if (/^selam[!,.]?$/i.test(userInput)) {
     chat.innerHTML += `<div class="message bot">Merhaba! Size nasıl yardımcı olabilirim?</div>`;
     chat.scrollTop = chat.scrollHeight;
     return;
   }
 
+  // Normal akış: prompt’u oluştur ve API’ye gönder
   const template = await loadPrompt();
   const finalPrompt = template
     .replace('{{menuContent}}', menuText)
@@ -69,27 +64,25 @@ async function sendMessage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: finalPrompt })
     });
-    const text = await res.text();
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch {
-      chat.innerHTML += `<div class="message bot error"><pre style="white-space: pre-wrap;">Sunucudan beklenmeyen yanıt:\n${text}</pre></div>`;
-      chat.scrollTop = chat.scrollHeight;
-      return;
-    }
+
+    const data = await res.json();
+
     if (!res.ok || data.error) {
+      console.error('API Hatası:', data.error || res.statusText);
       chat.innerHTML += `<div class="message bot error">Hata: ${data.error || res.statusText}</div>`;
     } else {
       chat.innerHTML += `<div class="message bot">${data.response}</div>`;
     }
     chat.scrollTop = chat.scrollHeight;
+
   } catch (e) {
-    chat.innerHTML += `<div class="message bot error">Fetch hatası: ${e.message}</div>`;
+    console.error('Fetch hatası:', e);
+    chat.innerHTML += `<div class="message bot error">Hata: ${e.message}</div>`;
     chat.scrollTop = chat.scrollHeight;
   }
 }
 
+// Buton ve Enter tuşuyla gönderme
 document.getElementById('btnSend').addEventListener('click', sendMessage);
 document.getElementById('user-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') sendMessage();

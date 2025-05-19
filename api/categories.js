@@ -1,27 +1,29 @@
 // api/categories.js
-import cheerio from "cheerio";
+const cheerio = require("cheerio");
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   const START_URL = "https://allzinapp.com/chilai/menu";
   const API_KEY   = process.env.SCRAPINGBEE_KEY;
+
   if (!API_KEY) {
     return res.status(500).json({ error: "SCRAPINGBEE_KEY tanımlı değil!" });
   }
 
   try {
-    // 1) Ana menü sayfasını ScrapingBee ile render edip çek
-    const homeHtml = await fetch(
+    // 1) Fetch the main page via ScrapingBee
+    const homeResp = await fetch(
       `https://app.scrapingbee.com/api/v1?` +
       `api_key=${API_KEY}` +
       `&url=${encodeURIComponent(START_URL)}` +
       `&render_js=true`
-    ).then(r => {
-      if (!r.ok) throw new Error(`ScrapingBee home hata: ${r.status}`);
-      return r.text();
-    });
+    );
+    if (!homeResp.ok) {
+      throw new Error(`ScrapingBee home hata: ${homeResp.status}`);
+    }
+    const homeHtml = await homeResp.text();
     const $ = cheerio.load(homeHtml);
 
-    // 2) “Yiyecekler” linkindeki kategori ID’sini al
+    // 2) Grab the “Yiyecekler” link’s category ID
     const yiyecekHref = $('a:contains("Yiyecekler")').attr("href");
     if (!yiyecekHref) {
       throw new Error("Yiyecekler kategorisi bulunamadı");
@@ -29,21 +31,22 @@ export default async function handler(req, res) {
     const yiyecekId = new URL(yiyecekHref, START_URL)
                        .searchParams.get("idProductCategory");
 
-    // 3) O kategori sayfasını render edip çek
-    const catHtml = await fetch(
+    // 3) Fetch that sub-category page
+    const catResp = await fetch(
       `https://app.scrapingbee.com/api/v1?` +
       `api_key=${API_KEY}` +
       `&url=${encodeURIComponent(`${START_URL}/menu-items-page?idProductCategory=${yiyecekId}`)}` +
       `&render_js=true`
-    ).then(r => {
-      if (!r.ok) throw new Error(`ScrapingBee category hata: ${r.status}`);
-      return r.text();
-    });
+    );
+    if (!catResp.ok) {
+      throw new Error(`ScrapingBee category hata: ${catResp.status}`);
+    }
+    const catHtml = await catResp.text();
     const $$ = cheerio.load(catHtml);
 
-    // 4) Alt kategori başlıklarını seç (örneğin <h3> etiketlerinde)
+    // 4) Pull out the sub-category titles
     const subcats = [];
-    $$(".menu-category__title, .item-card h3")  // sayfadaki gerçek seçicilere göre uyarlayın
+    $$("h3, .menu-category__title") // use the real selectors you find in devtools
       .each((_, el) => {
         const name = $$(el).text().trim();
         if (name) subcats.push(name);
@@ -55,11 +58,11 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       mainCategory: "Yiyecekler",
-      subCategories: [...new Set(subcats)]
+      subCategories: Array.from(new Set(subcats))
     });
 
   } catch (err) {
     console.error("Kategori çekme hatası:", err);
     return res.status(500).json({ error: err.message });
   }
-}
+};

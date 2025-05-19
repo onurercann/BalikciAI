@@ -9,10 +9,9 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // Render edilmiş HTML'i ScrapingBee ile çek
+    // 1) Render edilmiş HTML'i ScrapingBee ile çek
     const apiUrl =
-      `https://app.scrapingbee.com/api/v1?` +
-      `api_key=${API_KEY}` +
+      `https://app.scrapingbee.com/api/v1?api_key=${API_KEY}` +
       `&url=${encodeURIComponent(START_URL)}` +
       `&render_js=true`;
     const homeResp = await fetch(apiUrl);
@@ -20,10 +19,10 @@ module.exports = async (req, res) => {
       throw new Error(`ScrapingBee hata: ${homeResp.status}`);
     }
     const html = await homeResp.text();
-    const $ = cheerio.load(html);
 
-    // Sayfadaki tüm kategori linklerini topla
-    const categories = [];
+    // 2) Cheerio ile kategori bağlantılarını çek
+    const $ = cheerio.load(html);
+    let categories = [];
     $('a[href*="menu-items-page?idProductCategory="]').each((_, el) => {
       const href = $(el).attr('href');
       const url  = new URL(href, START_URL);
@@ -32,16 +31,26 @@ module.exports = async (req, res) => {
       if (id && name) categories.push({ id, name });
     });
 
-    // ID’ye göre eşsizleştir
+    // 3) Eğer Cheerio ile bulunamazsa, regex fallback
+    if (!categories.length) {
+      const regex = /<a[^>]*href="\/chilai\/menu\/menu-items-page\?idProductCategory=(\d+)[^"]*"[^>]*>([^<]+)<\/a>/g;
+      let match;
+      while ((match = regex.exec(html)) !== null) {
+        const id = match[1];
+        const name = match[2].trim();
+        categories.push({ id, name });
+      }
+    }
+
+    // 4) Eşsizleştir ve döndür
     const unique = Array.from(
       new Map(categories.map(cat => [cat.id, cat])).values()
     );
     if (!unique.length) {
       return res.status(404).json({ error: 'Kategori bulunamadı.' });
     }
-
-    // JSON olarak döndür
     return res.status(200).json({ categories: unique });
+
   } catch (err) {
     console.error('Kategori çekme hatası:', err);
     return res.status(500).json({ error: err.message });

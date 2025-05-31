@@ -1,0 +1,35 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <title>Chilai AI Chatbot</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div id="chat-wrapper">
+    <header><h1>Chilai AI</h1></header>
+    <p id="upload-status">Menü yükleniyor...</p>
+    <div id="chat-container"></div>
+    <footer id="controls">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Sorunuzu yazın..."
+        autocomplete="off"
+      />
+      <!-- type="button" ve tabindex="-1" ile buton focus almaz -->
+      <button id="btnSend" type="button" tabindex="-1">Gönder</button>
+    </footer>
+  </div>
+</body>
+</html>

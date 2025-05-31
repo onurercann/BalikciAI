@@ -1,0 +1,1931 @@
+{
+    "Yiyecekler": {
+      "Kahvaltı": [
+        {
+          "isim": "Geleneksel Kahvaltı Tabağı (İki Kişilik Servis Edilir.)",
+          "fiyat": 2500,
+          "açıklama": "Taze otlarla marine edilmiş zeytin çeşitleri, Ezine beyaz peynir, tulum peyniri, eski kaşar, emmantel peyniri, reçel, bal, çikolata, manda kaymağı, ızgara sucuk, jambonlu ve peynirli börek, tereyağında göz yumurta, cherry domates, salatalık, siyah üzüm, taze chilai ekmekleri"
+        },
+        {
+          "isim": "Breakfast In Chilai",
+          "fiyat": 950,
+          "açıklama": "İthal peynir çeşitleri, ızgara domates ve mantar, ızgara dana sosis, somon füme, ıspanaklı göz yumurta, kuru meyveler, taze chilai ekmekleri"
+        },
+        {
+          "isim": "Çırpılmış Yumurtalı ve Mantarlı",
+          "fiyat": 600,
+          "açıklama": "Kızarmış ekşi mayalı ekmek üzerine hazırlanmış hafif krema ile pişirilmiş mantarlar, mascarpone peyniri, çırpılmış yumurta, kızarmış dana bacon ile"
+        },
+        {
+          "isim": "Somon Füme",
+          "fiyat": 700,
+          "açıklama": "Kızarmış ekşi mayalı ekmek üzerinde krem peyniri, avokado dilimleri, füme Norveç somonu, poşe yumurta hollandaise sos ile"
+        },
+        {
+          "isim": "Bagel",
+          "fiyat": 600,
+          "açıklama": "Hafif krema ile sotelenmiş ıspanaklı mantar, dana cotto jambonu, cheddar peyniri, tereyağında göz yumurta ile"
+        },
+        {
+          "isim": "Croque Madame",
+          "fiyat": 650,
+          "açıklama": "Ekşi mayalı ekmek, morney sos, dana cotto jambonu, tereyağında göz yumurta, frenk soğan, emmantel peyniri"
+        },
+        {
+          "isim": "Egg Benedict (Domuz eti içerir)",
+          "fiyat": 700,
+          "açıklama": "Ekşi mayalı ekmek üzerinde sotelenmiş ıspanak ve kültür mantarları, çıtır bacon, poşe yumurta, trüf aromalı hollandaise sos ile"
+        },
+        {
+          "isim": "Avokado ve Ricotta Peynirli Omlet",
+          "fiyat": 400,
+          "açıklama": "Üç adet yumurta, avokado, taze fesleğen, ricotta peyniri, cherry domates"
+        },
+        {
+          "isim": "Üç Peynirli Omlet",
+          "fiyat": 400,
+          "açıklama": "Üç adet yumurta, mozzarella, cheddar, ricotta peynirleri, taze fesleğen, sızma zeytinyağı"
+        },
+        {
+          "isim": "Mantar Jambonlu Omlet",
+          "fiyat": 400,
+          "açıklama": "Üç adet yumurta, mantar, dana jambon, ıspanak, cheddar peyniri, cherry domates"
+        },
+        {
+          "isim": "Pancake Trio",
+          "fiyat": 450,
+          "açıklama": "Taze çilek ve krokanlı, çikolata ve muzlu, orman meyveli ve kremalı ev yapımı pancake’ler, agave"
+        }
+      ],
+      "Çorba-Salata": [
+        {
+          "isim": "Deniz Mahsulleri Çorbası",
+          "fiyat": 650,
+          "açıklama": "Karides bisque ve balık suyu ile tatlandırılmış kalamar, karides, levrek, midye, mevsim sebzeleri"
+        },
+        {
+          "isim": "Roka ve Kinoa Salatası",
+          "fiyat": 800,
+          "açıklama": "Taze roka yaprakları, kinoa, fırınlanmış balkabağı, kırmızı soğan, burata peyniri, kabak çekirdekleri, ballı hardal sos"
+        },
+        {
+          "isim": "Yedikule Marulu ve Avokado Salatası",
+          "fiyat": 900,
+          "açıklama": "Yedikule marulu, avokado, salatalık, zeytin, ızgara enginar kalbi, kroton ekmek, herbal sos, parmesan ve ricotta peynirleri"
+        },
+        {
+          "isim": "Fırınlanmış Brokoli ve Nohut Salatası",
+          "fiyat": 650,
+          "açıklama": "Humus yatağında fırınlanmış brokoli, haşlanmış nohut taneleri, siyah susam, sızma zeytinyağı"
+        },
+        {
+          "isim": "Pancar ve Keçi Peyniri Salatası",
+          "fiyat": 650,
+          "açıklama": "Fırınlanmış Pancar dilimleri, mevsim yeşillikleri, karamelize armut, fırınlanmış keçi peyniri, nar sos, kavrulmuş ceviz ile"
+        },
+        {
+          "isim": "Stroganof Salatası",
+          "fiyat": 800,
+          "açıklama": "Jülyen dana bonfile, mantar, salatalık turşusu, hafif krema, Akdeniz yeşillikleri, renkli biberler, bebek turp, soya filizi, taze baharatlar, kroton, parmesan yongaları, tane hardallı sos ile"
+        },
+        {
+          "isim": "Cesar Salata Tavuklu",
+          "fiyat": 800,
+          "açıklama": "Körpe marul, Sezar sos, sarımsaklı ve fesleğenli ekmek, ızgara tavuk göğsü, parmesan peyniri"
+        },
+        {
+          "isim": "Beyaz Peynirli Bahçe Salatası",
+          "fiyat": 650,
+          "açıklama": "Karışık yeşillikler, yaban mersini, haşhaş, badem, maydanoz, taze nane, dereotu, pancar, bebek turp, cherry domates, beyaz peynir, siyah üzüm, elma vinigret ile"
+        },
+        {
+          "isim": "Çıtır Tavuk Salatası",
+          "fiyat": 800,
+          "açıklama": "Panelenmiş tavuk dilimleri, coleslaw salatası, kuru üzüm, ekşi elma, Akdeniz yeşillikleri, bebek turp, soya filizi, renkli biberler, taze baharatlar, hardal sos ile"
+        },
+        {
+          "isim": "Füme Somon Salata",
+          "fiyat": 950,
+          "açıklama": "Akdeniz yeşillikleri, avokado, ev yapımı soğan turşusu, salatalık, kırmızı soğan, kapari çiçeği, enginar kalbi, chilai için fümelemniş Norveç somonu, taze baharatlar, herbal sos"
+        }
+      ],
+      "aperatifler": [
+        {
+          "isim": "Peynir Tabağı",
+          "fiyat": "1.100,00 ₺",
+          "açıklama": "Brie, manchego, provolone, rokfor, kars gravyeri, parmesan, ev yapımı reçel, karamelize ceviz, siyah üzüm, grissini ve kuru meyveler"
+        },
+        {
+          "isim": "Şarküteri Tabağı",
+          "fiyat": "1.450,00 ₺",
+          "açıklama": "Dana cotto, füme dil, antrikot füme, somon füme, rozbeef, ızgara dana sosis, trozi turşusu, brie peyniri, rokfor peyniri, ceviz reçeli, tane hardal, kokteyl zeytin, siyah üzüm, grissini"
+        },
+        {
+          "isim": "Nachos (acı sos ve acı biber içerir)",
+          "fiyat": "850,00 ₺",
+          "açıklama": "Nachos cipsleri, Meksika baharatlı dana bonfile parçaları, cheddar peyniri, jalapeno biberi, guacamole domates salsa, süzme yoğurt"
+        },
+        {
+          "isim": "Karides Tempura",
+          "fiyat": "750,00 ₺",
+          "açıklama": "Tempura karidesler, çıtır karides cipsleri, tatlı acı sos"
+        },
+        {
+          "isim": "Deniz Mahsülleri Tabağı",
+          "fiyat": "2.200,00 ₺",
+          "açıklama": "İki adet Gillardea, uistridye, iki adet buharda Jumbo karides, somon sashimi, levrek sashimi, ahtapot söğüş, ponzu sos, ve lime limon ile"
+        },
+        {
+          "isim": "Burata",
+          "fiyat": "850,00 ₺",
+          "açıklama": "Kızarmış ekşi mayalı ekmek üzerinde avokado tartare, burata, cherry domatesler, zeytin tapenade, pancar püresi, pesto sos"
+        },
+        {
+          "isim": "Ördek Sprigroll",
+          "fiyat": "600,00 ₺",
+          "açıklama": "Baklava yufkasında sarılmış pekin ördeği, hoison sos ile"
+        },
+        {
+          "isim": "Vitello Tonato",
+          "fiyat": "700,00 ₺",
+          "açıklama": "Ton balığı kreması, rozbeef, hardal tohumu, frenk soğan, kapari meyvesi, sızma zeytinyağı"
+        },
+        {
+          "isim": "Steak Tartare",
+          "fiyat": "650,00 ₺",
+          "açıklama": "Hardal ile tatlandırılmış dana bonfileden tartare, ev yapımı patates cipsleri, kızarmış ekmek, balsamik çektirmesi ile"
+        }
+      ],
+      "Ana Yemekler": [
+        {
+          "isim": "Tavuk Schnitzel",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Parmesan peyniri ve panco ile panelenmiş tavuk göğüs, kereviz ve mayonezli patates salatası, peri peri sos, baharatlı tereyağı ile"
+        },
+        {
+          "isim": "Izgara Tavuk Şiş (acı içerir)",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Karışık baharatlar ile marine edilip közde pişirilmiş tavuk but, sotelenmiş renkli biberler, avokado salsa, sourcream, tortilla ekmekleri, taze kişniş yaprakları jalepone biberleri ile"
+        },
+        {
+          "isim": "Ördek Confit",
+          "fiyat": "1,500.00 ₺",
+          "açıklama": "Confit tekniği ile pişirilmiş ördek bacağı, ve magret göğüs, portakallı havuç püresi, fondant patates, brüksel lahanası, vişne sos ile"
+        },
+        {
+          "isim": "Dana Kaburga",
+          "fiyat": "1,350.00 ₺",
+          "açıklama": "12 saat hafif ateşte fırınlanmış 450 gr. dana kaburga, patlıcanlı risotto, közlenmiş biber ve ıspanak sote, teriyaki sos ile"
+        },
+        {
+          "isim": "Chilai Kebap",
+          "fiyat": "1,100.00 ₺",
+          "açıklama": "Tortilla ekmeğine sarılmış 150 gr. Adana kebap, 150 gr. Izgara bonfile dilimleri, patlıcan beğendi, kibrit patates, közlenmiş domates ve biber, iskender sos, yoğurt acılı tereyağı"
+        },
+        {
+          "isim": "Parmesanlı Trüflü Antrikot",
+          "fiyat": "2,000.00 ₺",
+          "açıklama": "28 gün dinledirilip truf aromalı parmesan ile kaplanmış 350 gr dana antrikot, yedikule marul, bebek patatesler"
+        },
+        {
+          "isim": "Newyork Steak",
+          "fiyat": "1,900.00 ₺",
+          "açıklama": "28 gün dinlendirilmiş 350 gr. dana bifteği, bebek patatesler, tereyağında istiridye mantarı, tane hardallı demi glace sos"
+        },
+        {
+          "isim": "Dallas Steak",
+          "fiyat": "1,950.00 ₺",
+          "açıklama": "28 gün dinlendirilmiş 450 gr. dana pirzolası, bebek patatesler, tereyağında istiridye mantarı, tane hardallı demi glace sos ile"
+        },
+        {
+          "isim": "Kuzu Pirzola",
+          "fiyat": "1,550.00 ₺",
+          "açıklama": "Izgarada pişirilmiş, 300 gr. kuzu pirzolaları, safranlı patates tekerleri, naneli bezelye püresi, demi glace sos ile"
+        },
+        {
+          "isim": "Izgara Dana Bonfile",
+          "fiyat": "1,350.00 ₺",
+          "açıklama": "Izgarada pişirilmiş 250 gr. dana bonfile madalyonları, bebek patates, renkli biberler, istiridye mantarı, ızgara soğan halkaları, taze kekik, hardallı demi glace sos ile"
+        }
+      ],
+      "deniz_urunleri": [
+        {
+          "isim": "Boullebaisse",
+          "fiyat": "1.400₺",
+          "açıklama": "Deniz levreği, karides, kalamar, midye, scallop, cheery domates, safranlı patates, ızgara Yedikule, bisque sos, kızarmış ekmek"
+        },
+        {
+          "isim": "Jumbo Karides",
+          "fiyat": "1.850₺",
+          "açıklama": "Izgara Jumbo karidesler, taze kuşkonmaz, fondant patates, domates ve balsamik havyarları, hafif acılı lemonbutter ile"
+        },
+        {
+          "isim": "Ballı Ve Hardallı Norveç Somonu",
+          "fiyat": "1.100₺",
+          "açıklama": "Ceviz ve maydanoz ile kaplanmış Norveç somonu, patates püresi, taze kuşkonmaz, ballı ve hardallı sos, somon yumurtası ile"
+        },
+        {
+          "isim": "Istakoz Kuyruğu",
+          "fiyat": "1.950₺",
+          "açıklama": "Tereyağında demlenerek pişmiş ıstakoz kuyruğu, bisque sosunda karidesli ve midyeli ev yapımı tagliolini, taze baharatlı sızma zeytinyağı"
+        },
+        {
+          "isim": "Izgara Çipura",
+          "fiyat": "1.100₺",
+          "açıklama": "Izgarada pişmiş çipura filetosu, patates püresi, kuşkonmaz, domates havyarları, tereyağı limon sos ile"
+        },
+        {
+          "isim": "Izgara Deniz Levreği",
+          "fiyat": "1.950₺",
+          "açıklama": "Kömür ızgarasında pişirilmiş deniz levreği, patates püresi, sotelenmiş ıspanak, taze kuşkonmaz, tereyağı limon sos, roka yaprakları"
+        }
+      ],
+      "Pizza": [
+        {
+          "isim": "Burata Ve Füme Etli Pizza",
+          "fiyat": "950.00 ₺",
+          "açıklama": "Domates sos, mozzarella, burata, füme et, taze roka yaprakları"
+        },
+        {
+          "isim": "Pizza Carpaccio",
+          "fiyat": "950.00 ₺",
+          "açıklama": "Domates sos, mozzarella, carpaccio dana bonfile, taze roka yaprakları, parmesan peyniri, taze kekik, sızma zeytinyağı"
+        },
+        {
+          "isim": "Pizza Peperoni (Acı İçerir)",
+          "fiyat": "900.00 ₺",
+          "açıklama": "Domates sos, mozzarella, dana pepperoni, kırmızı soğan, confit domates, acı biber, taze fesleğen yaprakları"
+        },
+        {
+          "isim": "Pizza Zucchini",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Mozzarella, ızgara yeşil kabak, provolone, confit domates, burata, taze roka yaprakları, kabak çekirdekli pesto sos, somon yumurtası"
+        },
+        {
+          "isim": "Pizza Alfredo",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Beyaz sos, tavuk göğüs, mozzarella peyniri, füme tavuk, mantar, confit domates, kırmızı soğan, fesleğen pesto sos"
+        },
+        {
+          "isim": "Zeytinli Ve Confit Domatesli",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Domates sos, mozzarella, fesleğen, yeşil zeytin, confit domates, zeytinyağı, kırmızı soğan"
+        },
+        {
+          "isim": "Dört Peynirli Pizza",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Mozzarella, gorgonzola, parmesan, ricotta, peynirleri, balsamikli roka yaprakları"
+        },
+        {
+          "isim": "Roma Enginarlı",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Beyaz sos, mozzarella, provolone peyniri, enginar kalbi, bebek ıspanak, fırınlanmış dana bacon"
+        },
+        {
+          "isim": "Trüf Mantarlı Pizza",
+          "fiyat": "1,150.00 ₺",
+          "açıklama": "Beyaz sos, mozzarella peyniri, burata, siyah trüf mantarı dilimleri, cotto jambonu ile"
+        }
+      ],
+      "Risotto-Makarna": [
+        {
+          "isim": "Deniz Mahsülleri Risotto",
+          "fiyat": "1250.00 ₺",
+          "açıklama": "Kalamar, karides, deniz tarağı eti, ahtapot, midye, somon yumurtası, hafif domates sos"
+        },
+        {
+          "isim": "Mantarlı Risotto",
+          "fiyat": "950.00 ₺",
+          "açıklama": "Dağ mantarları ile hazırlanmış risotto, trüf yağı, parmesan peyniri"
+        },
+        {
+          "isim": "Deniz Mahsülleri Linguni",
+          "fiyat": "1250.00 ₺",
+          "açıklama": "Mürekkep balığı sosu ile hazırlanmış ev yapımı siyah linguini, kalamar, karides, ahtapot, midye, domates, hafif acılı bisque sos ile"
+        },
+        {
+          "isim": "Ispanaklı Ravioli",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Ricotta, ıspanak ve mozzarella peyniri ile doldurulmuş ev yapımı ravioli, confit domatesli pembe sos ile"
+        },
+        {
+          "isim": "Dört Peynirli Tortellini",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Ricotta, mozzarella, parmesan, ile doldurulmuş ev yapımı tortellini, cotto jambonu, gorgonzola peynirli krem sos ile"
+        },
+        {
+          "isim": "Zeytinli Ve Confit Domatesli",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Domates sos, mozzarella, fesleğen, yeşil zeytin, confit domates, zeytinyağı, kırmızı soğan"
+        },
+        {
+          "isim": "Linguni Pesto",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Ev yapımı linguni, bademli fesleğen pesto sosu, sızma zeytinyağı, confit cherry domates, burata peyniri ile"
+        },
+        {
+          "isim": "Fettuccinne Fungi",
+          "fiyat": "800.00 ₺",
+          "açıklama": "BEv yapımı fettucinne makarna, porçini, trüf, kültür, kestane mantarları, parmesanlı krem sos ile"
+        },
+        {
+          "isim": "Fusulli And Burata",
+          "fiyat": "800.00 ₺",
+          "açıklama": "Dana bacon, hafif acılı cherry domates sos, burata, taze fesleğen, sızma zeytinyağı"
+        },
+        {
+          "isim": "Penne Melanzane",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Cherry domates, hafif acı, biberiye, patlıcan, mozzarella, taze fesleğen, parmesan, sızma zeytinyağı"
+        },
+        {
+          "isim": "Chilai Mantı",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Ev yapımı mantı, sarımsaklı yoğurt, ceviz içi, domates sos, kırımızı biberli tereyağı ile"
+        }
+      ],
+      "Burger-Sandviç": [
+        {
+          "isim": "Dana Bacon Burger",
+          "fiyat": "850.00 ₺",
+          "açıklama": "200gr. Hambuger köftesi, cheddar peyniri, karamelize soğan, dana bacon, trüflü mayonez, ev yapımı patates cips ile"
+        },
+        {
+          "isim": "Chili Burger (acı içerir)",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Mozzarella, cheddar, jalapeno ile kaplanmış 200 gr. Hamburger köftesi, domates salsa, teksas sos ev yapımı patates cips ile"
+        },
+        {
+          "isim": "Cheese Burger",
+          "fiyat": "750.00 ₺",
+          "açıklama": "200gr. Burger köftesi, yeşillik, domates, cheddar peyniri, karamelize soğan, salatalık turşusu, truflü mayonez, ev yapımı patates cips ile"
+        },
+        {
+          "isim": "Steak Sandviç",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Ekşi mayalı ciabatta ekmeği, Izgara bonfile, dana bacon, roka, kırmızı soğan, domates, salatalık turşusu, hardal sos, cheddar peyniri, ev yapımı patates cipsleri"
+        },
+        {
+          "isim": "Somon Ve Yengeç Sandviç",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Ekşi mayalı ciabatta ekmeği içinde mayonezli yengeç salatası, taze roka yaprakları, füme Norveç somonu, avokado dilimleri, ev yapımı patates cipsleri ile"
+        },
+        {
+          "isim": "Dana Kaburga Sandviç",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Ekşi mayalı ciabatta ekmeği içinde 12 saat fırında pişirilmiş dana kaburga tiftikleri, karamelize soğan, emmantal peyniri, ev yapımı patates cipsleri, teksas sos ile"
+        },
+        {
+          "isim": "Caprese Sandviç",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Ekşi mayalı focaccia ekmeği arasında ev yapımı közlenmiş patlıcan, mozzarella peyniri, domates, sızma zeytinyağı, fesleğen, pesto sos, zeytin tapenada, ev yapımı patates cipsleri"
+        }
+      ],
+      "Tatlılar-Dondurma": [
+        {
+          "isim": "Armut Tatin",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Fırınlanmış armut, rokfor peynirli dondurma, karamelize ceviz ile"
+        },
+        {
+          "isim": "Çikolatalı Sufle",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Bitter çikolatalı sufle, pudra şekeri, vanilyalı dondurma, milkshake ile"
+        },
+        {
+          "isim": "Banana Split",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Milföy hamuru, krem patisseri, karamelize muz, vanilyalı dondurma"
+        },
+        {
+          "isim": "Tiramisu",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Espressolu kedidili bisküvi, mascarpone peyniri, taze krema"
+        },
+        {
+          "isim": "Profiterol",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Ilık çikolata sos, fındık krokan, Antep fıstığı"
+        },
+        {
+          "isim": "San Sebastian Cheese Cake",
+          "fiyat": "500.00 ₺",
+          "açıklama": "Fındıklı çikolata sos"
+        },
+        {
+          "isim": "Ev Yapımı Dondurma Çeşitleri",
+          "fiyat": "70.00 ₺",
+          "açıklama": "Vanilyalı, çilekli, bitter çikolatalı, karamelli, kaymak, fıstık"
+        },
+        {
+          "isim": "Ev Yapımı Sorbe Çeşitleri",
+          "fiyat": "70.00 ₺",
+          "açıklama": "Mandalina, limon, mango, frambuaz, passionfruit"
+        },
+        {
+          "isim": "Meyve Tabağı",
+          "fiyat": "600.00 ₺",
+          "açıklama": "Mevsim meyveleri"
+        }
+      ],
+      "Bar Menüsü": [
+        {
+          "isim": "Izgara Dana Bonfile",
+          "fiyat": "1,350.00 ₺",
+          "açıklama": "Izgarada pișirilmiș 250 gr. Dana bonfile madalyonları, bebek patates, renkli biberler, istiridye mantarı, ızgara soğan halkaları, taze kekik, hardallı demi glace sos ile"
+        },
+        {
+          "isim": "Kuzu Pirzola Lamb Chops",
+          "fiyat": "1,550.00 ₺",
+          "açıklama": "Izgarada pișirilmiș, 300gr. Kuzu pirzolaları, safranlı patates tekerleri, naneli bezelye püresi, demi glace sos ile"
+        },
+        {
+          "isim": "Peynir Tabağı Cheese Plate",
+          "fiyat": "1,100.00 ₺",
+          "açıklama": "Brie, manchego, provolone, rokfor, kars gravyeri, parmesan, ev yapımı reçel, karamelize ceviz, siyah üzüm, grissini ve kuru meyveler"
+        },
+        {
+          "isim": "1/2 Peynir Tabağı 1/2 Cheese Plate",
+          "fiyat": "850.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Karides Tempura Shrimp Tempura",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Tempura karidesler, çıtır karides cipsleri, tatlı acı sos"
+        },
+        {
+          "isim": "Ördek Springroll / Duck Spring Rolls",
+          "fiyat": "600.00 ₺",
+          "açıklama": "Baklava yufkasında sarılmıș pekin ördeği, hoison sos ile"
+        },
+        {
+          "isim": "Dana Bacon Burger",
+          "fiyat": "850.00 ₺",
+          "açıklama": "200gr. Hamburger köftesi, cheddar peyniri, karamelize soğan, dana bacon, trüflü mayonez, ev yapımı patates cips ile"
+        },
+        {
+          "isim": "Chicken Fingers",
+          "fiyat": "800.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Nachos (acı sos ve acı biber içerir)",
+          "fiyat": "850.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Beyaz Peynirli Bahçe Salatası",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Karıșık yeșillikler, yaban mersini, hașhaș, badem, maydanoz, taze nane, dereotu, pancar, bebek turp, cherry domates, beyaz peynir, siyah üzüm, elma vinigret ile"
+        },
+        {
+          "isim": "Patates Kızartması",
+          "fiyat": "350.00 ₺",
+          "açıklama": ""
+        }
+      ]
+    },
+    "Şaraplar": {
+      "Yerli Beyaz Şaraplar (15cl)": [
+        {
+          "isim": "Egeo",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Sauvignon Blanc, Denizli"
+        },
+        {
+          "isim": "Dlc",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Sultaniye, Emir, Denizli, Kapadokya"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Chardonnay, Güney / Ege"
+        }
+      ],
+      "Yerli Kırmızı Şaraplar (17 Cl)": [
+        {
+          "isim": "Egeo",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Cabernet Franc Merlot, Denizli, Güney Ege"
+        },
+        {
+          "isim": "Dlc",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Öküzgözü, Doğu Anadolu"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Merlot, Trakya"
+        }
+      ],
+      "Beyaz Şaraplar (15 Cl)": [
+        {
+          "isim": "Fransa / 531 Pascal Bouchard Chablis Le Classique",
+          "fiyat": "900.00 ₺",
+          "açıklama": "Chardonnay, Chablis"
+        },
+        {
+          "isim": "İtalya / 661 Satori Pinot Grigio",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Pinot Grigio, Veneto"
+        }
+      ],
+      "Kırmızı Şaraplar (17 Cl)": [
+        {
+          "isim": "Fransa / 613 Louis Bernard Cotes Du Rhone Rouge",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Grenache, Syrah, Rhone"
+        },
+        {
+          "isim": "İtalya / 717 Piccini Chianti Docg",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Sangiovese, Toscana"
+        }
+      ],
+      "Şampanya Ve Köpüklü Şaraplar (15 Cl)": [
+        {
+          "isim": "965 Perlino Prosecco",
+          "fiyat": "600.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "930 Moet & Chandon",
+          "fiyat": "1,250.00 ₺",
+          "açıklama": ""
+        }
+      ],
+      "Roze ve Blush Şaraplar (15 Cl)": [
+        {
+          "isim": "İtalya / 638 Sartori Blush Pinot Grigio",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Pinot Grigio Veneto"
+        },
+        {
+          "isim": "Portekiz / 623 Caves Alianca Casal Mendes Rose",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Baga, Beiras"
+        },
+        {
+          "isim": "Yerli / 635 Egeo Roze",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Syrah, Grenache, Çalkarası, Ege"
+        },
+        {
+          "isim": "Yerli / 634 Kayra Vintage Rose",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Öküzgözü, Denizli"
+        },
+        {
+          "isim": "Yerli / 637 Verano Blush",
+          "fiyat": "650.00 ₺",
+          "açıklama": "Grenache, Saroz"
+        }
+      ],
+      "Tatlı Şaraplar (15 Cl)": [
+        {
+          "isim": "Safir",
+          "fiyat": "650.00 ₺",
+          "açıklama": ""
+        }
+      ],
+      "Kavaklıdere Beyaz (75 Cl)": [
+        {
+          "isim": "Kavaklıdere Misket",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Misket, Kemaliye"
+        },
+        {
+          "isim": "Kavaklıdere Emir",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Emir, Kapadokya"
+        },
+        {
+          "isim": "Vin-Art",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Narince, Chardonnay, Kapadokya"
+        },
+        {
+          "isim": "Selecetion",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Narince, Emir, Tokat, Nevşehir"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Sauvignon Blanc, Denizli"
+        },
+        {
+          "isim": "Egeo Füme Blanc",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Sauvignon Blanc, Denizli"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Chardonnay, Güney / Ege"
+        }
+      ],
+      "Kırmızı (75 Cl)": [
+        {
+          "isim": "Vin-Art",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Kalecik Karası, Syrah İç Anadolu, Ege"
+        },
+        {
+          "isim": "Selection",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Öküzgözü, Boğazkere, Elaazığ, Diyarbakır"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Merlot, Ege"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Cabernet Franc Merlot, Denizli, Güney Ege"
+        },
+        {
+          "isim": "Egeo",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Syrah, Ege"
+        },
+        {
+          "isim": "Egeo Blend",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Merlot, Syrah, Cabernet Franc, Denizli"
+        },
+        {
+          "isim": "Prestige",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Kalecik Karası, Kalecik"
+        },
+        {
+          "isim": "Prestige",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Öküzgözü, Elazığ"
+        },
+        {
+          "isim": "Prestige",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Boğazkere, Diyarbakır"
+        },
+        {
+          "isim": "Pendore",
+          "fiyat": "3,500.00 ₺",
+          "açıklama": "Öküzgözü, Kemaliye"
+        },
+        {
+          "isim": "Pendore",
+          "fiyat": "3,500.00 ₺",
+          "açıklama": "Syrah, Kemaliye"
+        },
+        {
+          "isim": "Dlc",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Öküzgözü, Doğu Anadolu"
+        },
+        {
+          "isim": "Dlc",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Kalecik Karası, Ankara"
+        },
+        {
+          "isim": "Kav",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Boğazkere, Öküzgözü, D. Anadolu, G.D. Anadolu"
+        },
+        {
+          "isim": "Sarafin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Saroz"
+        },
+        {
+          "isim": "Sarafin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Saroz"
+        },
+        {
+          "isim": "Sarafin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Shiraz, Saroz"
+        },
+        {
+          "isim": "Signium",
+          "fiyat": "3,800.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Shiraz, Merlot, Cabernet Franc, Denizli, Tekirdağ, Elazığ"
+        },
+        {
+          "isim": "Kızılcaterzi",
+          "fiyat": "3,800.00 ₺",
+          "açıklama": "Merlot, Trakya"
+        },
+        {
+          "isim": "Alçıtepe",
+          "fiyat": "4,000.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Shiraz, Saroz"
+        }
+      ],
+      "Doluca Beyaz (75 Cl)": [
+        {
+          "isim": "Dlc",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Sauvignon Blanc, Trakya"
+        },
+        {
+          "isim": "Dlc",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Sultaniye, Emir, Denizli, Kapadokya"
+        },
+        {
+          "isim": "Kav Narince",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Narince, Tokat"
+        },
+        {
+          "isim": "Karma",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Chardonnay, Narince, Denizli, Tokat"
+        },
+        {
+          "isim": "Sarafin Füme Blanc",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Sauvignon Blanc, Saroz"
+        },
+        {
+          "isim": "Sarafin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Sauvignon Blanc, Saroz"
+        },
+        {
+          "isim": "Sarafin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Chardonnay, Saroz"
+        },
+        {
+          "isim": "Signum",
+          "fiyat": "3,800.00 ₺",
+          "açıklama": "Chardonnay, Viognier, Narince, Trakya, Tokat"
+        }
+      ],
+      "Kayra Kırmızı (75 Cl)": [
+        {
+          "isim": "Kayra Buzbağ Rezerv",
+          "fiyat": "2,300.00 ₺",
+          "açıklama": "Öküzgözü, Boğazkere, Elazığ, Diyarbakır"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Merlot, Trakya"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Urla"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Boğazkere, Diyarbakır"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Shiraz, Trakya"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Öküzgözü Single Vineyard Aydıncık, Elazığ"
+        },
+        {
+          "isim": "Kayra, Versus Dedeçeşme Blend",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Franc, Syrah, Dedeçeşme, Şarköy"
+        },
+        {
+          "isim": "Kayra, Versus",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Cabernet Franc, Dedeçeşme, Şarköy"
+        },
+        {
+          "isim": "Kayra, Versus Alpagut",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Öküzgözü, Alpagut - Elazığ"
+        },
+        {
+          "isim": "Kayra, Imperial Öküzgözü",
+          "fiyat": "8,000.00 ₺",
+          "açıklama": "Öküzgözü, Aydıncık, Elazığ"
+        }
+      ],
+      "Beyaz Yerli Şaraplar (75 Cl)": [
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Vintage Varrelfermentet Chardonnay Sur Lie, Denizli"
+        },
+        {
+          "isim": "Kayra, Vintage",
+          "fiyat": "2,750.00 ₺",
+          "açıklama": "Sauvignon Blanc, Trakya"
+        }
+      ],
+      "Yerli Kırmızı Şaraplar (75 Cl)": [
+        {
+          "isim": "Urla Tempus",
+          "fiyat": "3,750.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Merlot, Boğazkere"
+        },
+        {
+          "isim": "Urla Nero D'Avola Urla Karası",
+          "fiyat": "3,750.00 ₺",
+          "açıklama": "Urla Karası, Nero d'Avola"
+        },
+        {
+          "isim": "Corvus, Corpus",
+          "fiyat": "4,000.00 ₺",
+          "açıklama": "Syrah, Merlot, Cabernet Sauvignon, Bozcaada"
+        }
+      ],
+      "Roze Ve Blush Şaraplar (75 Cl)": [
+        {
+          "isim": "Fransa / 639 Moncigale Blush By Moncigale",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Cinsault, Grenache, Syrah, Provence"
+        },
+        {
+          "isim": "Fransa / 621 Ch D'Esclans Whispering Angel",
+          "fiyat": "4,000.00 ₺",
+          "açıklama": "Grenache, Rolle, Cinsault, Syrah, Mourvedre, Provence"
+        },
+        {
+          "isim": "Fransa / 631 Ch D'Esclans Rock Angel",
+          "fiyat": "5,500.00 ₺",
+          "açıklama": "Grenache, Rolle, Provence"
+        },
+        {
+          "isim": "Fransa / 624 Chateau De Selle Domaine Ott",
+          "fiyat": "7,000.00 ₺",
+          "açıklama": "Grenache, Cinsault, Cab. Sauv. Syrah, Cotes de Provence"
+        },
+        {
+          "isim": "Fransa / 630 Chateau D'Esclans Garrus",
+          "fiyat": "18,000.00 ₺",
+          "açıklama": "Grenache, Rolle, Provence"
+        },
+        {
+          "isim": "İtalya / 638 Sartori Blush Pinot Grigio",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Pinot Grigio, Veneto"
+        },
+        {
+          "isim": "Portekiz / 623 Caves Alianca Casal Mendes Rose",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Baga, Beiras"
+        }
+      ],
+      "Roze Yerli Şaraplar (75 Cl)": [
+        {
+          "isim": "627 Sarafin Roze",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Franc, Saroz"
+        },
+        {
+          "isim": "635 Egeo Roze",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Syrah, Greanache, Çalkarası, Ege"
+        },
+        {
+          "isim": "Verano Roze",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Öküzgözü, Trakya, Elazığ"
+        },
+        {
+          "isim": "634 Kayra, Vintage Rose",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Öküzgözü, Denizli"
+        },
+        {
+          "isim": "637 Verano Blush",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Grenache, Saroz"
+        }
+      ],
+      "Köpüklü Şaraplar (75 Cl)": [
+        {
+          "isim": "965 Perlino Prosecco",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": ""
+        }
+      ],
+      "Şampanyalar": [
+        {
+          "isim": "967 Mumm Cordon Rouge Brut",
+          "fiyat": "8,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "968 Mumm Cordon Rouge Rose",
+          "fiyat": "8,500.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "930 Moet & Chandon",
+          "fiyat": "8,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "929 Moet & Chandon Rose",
+          "fiyat": "9,500.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "962 Moet & Chandon Ice Imperial",
+          "fiyat": "10,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "963 Moet & Chandon N.I.R Dry",
+          "fiyat": "12,500.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "964 Moet & Chandon Ice Imperial Rose",
+          "fiyat": "12,500.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "911 Bollinger Special Cuvee",
+          "fiyat": "13,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "923 Dom Perignon",
+          "fiyat": "25,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "919 Louis Roederer. Cristal Brut",
+          "fiyat": "25,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "922 Dom Perignon Rose",
+          "fiyat": "40,000.00 ₺",
+          "açıklama": ""
+        }
+      ],
+      "Beyaz Şaraplar (75 Cl)": [
+        {
+          "isim": "Fransa / 534 Chateau Segun Blanc",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Sauvingnon Blanc, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 518 Michel Laroche. Chablis",
+          "fiyat": "4,000.00 ₺",
+          "açıklama": "Chardonnay, Burgundy"
+        },
+        {
+          "isim": "Fransa / 532 Domain Thomas & Fils Sancerre Blanc",
+          "fiyat": "4,500.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Fransa / 531 Pascal Bouchard Chablis Le Classiqoe",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": "Chardonnay, Chablis"
+        },
+        {
+          "isim": "Fransa / 533 Domaine Guerrin & Fils Pouilly Fuisse",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": "Chardoonay, La Marecaude / Burgundy"
+        },
+        {
+          "isim": "Fransa / 520 Pascal Jolivet, Puilly Fuisse",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": "Sauvignon Blanc, Loire"
+        },
+        {
+          "isim": "Fransa / 503 Michel Laroche, Chablis Premier Cru \"Vaudevey\"",
+          "fiyat": "9,000.00 ₺",
+          "açıklama": "Chardonnay, Burgundy"
+        },
+        {
+          "isim": "İtalya / 661 Sartori Pinot Grigio",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Pinot Grigio, Veneto"
+        },
+        {
+          "isim": "İtalya / 662 Tenuta Di Corte Giacobbe Soave",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Garganega, Veneto"
+        },
+        {
+          "isim": "İtalya / 663 Michele Chiarlo Barolo Gavi \"Le Marne\"",
+          "fiyat": "3,750.00 ₺",
+          "açıklama": "Cortese, Piemonte"
+        },
+        {
+          "isim": "Almanya / 993 Prinz V Hessen Riesling",
+          "fiyat": "3,750.00 ₺",
+          "açıklama": "Riesling, Rheingau"
+        }
+      ],
+      "Kırmızı Şaraplar (75 Cl)": [
+        {
+          "isim": "Fransa / 620 Chateau Seguin Rouge",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Sauvignon, Cabernet Franc, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 615 Jaffelin",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Pinot Noir, Burgundy"
+        },
+        {
+          "isim": "Fransa / 613 Louis Bernard Cotes Du Rhone Rouge",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Grenache, Syrah, Rhone"
+        },
+        {
+          "isim": "Fransa / 618 Maison Kavaklıdere La Folie",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 617 Maison Kavaklıdere Claud - Bellevue",
+          "fiyat": "3,500.00 ₺",
+          "açıklama": "Merlot, Cabernet Franc, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 612 Cheteau La Croic Lartigue",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Franc, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 619 Louis Bernard Chateauneuf Du Pape",
+          "fiyat": "7,000.00 ₺",
+          "açıklama": "Grenache, Syrah, Rhone"
+        },
+        {
+          "isim": "Fransa / 568 Vignobles Brunier Chateau Neuf Du Pape Vieux Tel.",
+          "fiyat": "10,000.00 ₺",
+          "açıklama": "Grenache Noir, Mourverde, Cinsault, Rhone"
+        },
+        {
+          "isim": "İtalya / 717 Piccini Chianti Docg",
+          "fiyat": "2,500.00 ₺",
+          "açıklama": "Sangiovese, Toscana"
+        },
+        {
+          "isim": "İtalya / 722 Castellani Chianti Classico",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Sangiovese, Cabernet Sauvignon, Toscana"
+        },
+        {
+          "isim": "İtalya / 726 Tenuta San Guido Le Difese",
+          "fiyat": "5,000.00 ₺",
+          "açıklama": "Cabernet, Sangiovese, Toscana"
+        },
+        {
+          "isim": "İtalya / 724 Barbaresco Coste Rubin",
+          "fiyat": "6,500.00 ₺",
+          "açıklama": "Nebbiolo, Piemonte"
+        },
+        {
+          "isim": "İtalya / 725 Barolo Serralunga D'Alba",
+          "fiyat": "7,000.00 ₺",
+          "açıklama": "Nebbiolo, Piemonte"
+        },
+        {
+          "isim": "İtalya / 727 Gaja Idda Etna Rosso",
+          "fiyat": "7,500.00 ₺",
+          "açıklama": "Merlot, Cabernet Sauvignon, Cabernet Franc, Toscana"
+        },
+        {
+          "isim": "Şili / 882 Concha Y Toro Casillero Del Diablo",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": "Merlot, Central Valley"
+        },
+        {
+          "isim": "Arjantin / 853 Catena Zapata",
+          "fiyat": "3,250.00 ₺",
+          "açıklama": "Malbec, Mendoza"
+        }
+      ],
+      "Kav Dünya Şarapları (75 Cl)": [
+        {
+          "isim": "Fransa / 575 Chateau Sacianda Mallet",
+          "fiyat": "10,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Sauvignon, Cabernet Franc, Haut Medoc"
+        },
+        {
+          "isim": "Fransa / 603 M.Chapoutier. Monier La Sizeranne 2006",
+          "fiyat": "12,000.00 ₺",
+          "açıklama": "Syrah, Hermitage"
+        },
+        {
+          "isim": "Fransa / 598 Chateau Leoville Las Cases 2007",
+          "fiyat": "30,000.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Merlot, Cabernet Franc, St. Julien, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 611 Chateau L'Angelus Aoc Avs 2004",
+          "fiyat": "45,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Franc, Cabernet Sauvignon, St. Emillion"
+        },
+        {
+          "isim": "Fransa / 565 Chateau La Fleur Petrus 2007",
+          "fiyat": "50,000.00 ₺",
+          "açıklama": "Pomerol, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 565 Chateau La Fleur Petrus 2004",
+          "fiyat": "60,000.00 ₺",
+          "açıklama": "Pomerol, Bordeaux"
+        },
+        {
+          "isim": "Fransa / 577 Chateau Carruades De Lafite 2001",
+          "fiyat": "60,000.00 ₺",
+          "açıklama": "Merlot, Cabernet Sauvignon, Cabernet Franc, Pauillac"
+        },
+        {
+          "isim": "Abd / 860 Opus One",
+          "fiyat": "50,000.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Cabernet Franc, Merlot, Petit Verdot, Napa Valley"
+        },
+        {
+          "isim": "İtalya / 693 Angelo Gaja, Gaja Promis IGT",
+          "fiyat": "10,000.00 ₺",
+          "açıklama": "Merlot, Shiraz, Sangiovese, Toscana"
+        },
+        {
+          "isim": "İtalya / 723 Michele Chiarlo Barolo Cannubi",
+          "fiyat": "17,500.00 ₺",
+          "açıklama": "Nebbiolo, Piemonte"
+        },
+        {
+          "isim": "İtalya / 718 Tenuta San Guido. Sassicia Rosso 2014",
+          "fiyat": "40,000.00 ₺",
+          "açıklama": "Cabernet Sauvignon, Cabernet Franc, Toscana"
+        }
+      ],
+      "Tatlı Şaraplar": [
+        {
+          "isim": "Safir (37,5 Cl)",
+          "fiyat": "2,000.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Safir (70 Cl)",
+          "fiyat": "3,000.00 ₺",
+          "açıklama": ""
+        }
+      ]
+    },
+    "Bar": {
+      "Chilai Kokteyller (15 Cl)": [
+        {
+          "isim": "Chilai Cocktail",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Blue - Passoa Likör - Mango - Passion - Ananas Suyu - Taze Lime"
+        },
+        {
+          "isim": "Porn Star Martini",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Mango ve passion meyveleri, absolut vanilya, elma suyu, sweet & sour ve prosecco"
+        },
+        {
+          "isim": "Keep Walk",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Malfy gin rosa, aperol, sweet & sour, portakal suyu"
+        },
+        {
+          "isim": "Narlı Long Island Ice Tea",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Absolut Blue - Havana Club - Beefeater Cin - Olmeca Blanco - Garrone Triple Sec Taze Nar Suyu - Sweet & Sour (With Egg White)"
+        },
+        {
+          "isim": "Jasmine Martinni",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Yasemin Çiceği İle İnfüzyon Edilmiş Vodka - Mürver Çiceği Likörü - Lime Suyu"
+        },
+        {
+          "isim": "Carnaval",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Havana Club - Cardinal Melon - Taze Çilek Suyu - Yaban Mersini"
+        },
+        {
+          "isim": "Green Face",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Ada Çayı ve Kekikle İnfüzyon Edilmiș Beefeater Cin, Münver Çiçeği Likörü ve Taze Yeșil Elma Suyu, El Yapımı Tatlı Ekși Sos"
+        },
+        {
+          "isim": "Golld Lemonade",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Kurutulmuş portakal limon ve lime ile demlenmiş tekila, cointreau el yapımı limonata"
+        },
+        {
+          "isim": "Red Chillies Chilai Margarita",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Jalepone Biberi ile Demlenmiș Olmeca Blanco, Garrone Triple Sec, Kırmızı Biber, Passion, Çin Kirazı"
+        },
+        {
+          "isim": "Beautiful Lady",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Don Julio - Aperol - Lime Suyu - Mango ve Passion Meyveleri - Șeker Șurubu - Nane Yaprağı"
+        },
+        {
+          "isim": "Green Creeper",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Beefeater Cin - Mürver çiçeği Likörü - Lime Suyu - Șeker Șurubu - Kuzu Kulağı - Salatalık"
+        },
+        {
+          "isim": "Genco Awa",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Chivas 12 Yo - Safari - Lime Suyu - Șeker șurubu - Tarçın - Cranberry"
+        },
+        {
+          "isim": "Yuzutini",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Blue - Cointreau - Ananas Suyu - Wasabi - Yuzu Suyu - Ginger ale"
+        }
+      ],
+      "Klasik Kokteyller (15 Cl)": [
+        {
+          "isim": "Moscow Mule",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Blue, Lime, Taze Zencefil, Ginger Ale"
+        },
+        {
+          "isim": "Apple Martini",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Blue - Taze Elma Suyu"
+        },
+        {
+          "isim": "Cosmopolitan",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Blue - Garrone Triple Sec - Cranberry"
+        },
+        {
+          "isim": "Mojito",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Havana Club - Nane - Șeker - Lime - Soda (Yeșil Elma-Mango-Çilek-Passion-Nar)"
+        },
+        {
+          "isim": "Caipirinha",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Cochaco-Lime-Esmer Şeker"
+        },
+        {
+          "isim": "Margarita",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Olmeca Blanco - Garrone Triple Sec - Lime Suyu (Yeșil Elma-Mango-Çilek-Passion-Nar)"
+        },
+        {
+          "isim": "Long Islan Ice Tea",
+          "fiyat": "750.00 ₺",
+          "açıklama": "Absolut Blue - Havana Club - Beefeater Cin - Olmeca Blanco - Garrone Triple Sec - Sweet & Sour - With Egg White - Cola"
+        },
+        {
+          "isim": "Lynchburg Lemonade",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Joint Bourbon - Garrone Triple Sec - Sweet & Sour ( With Egg White ) - Sprite"
+        },
+        {
+          "isim": "Old Fashion",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Joint Bourbon - Soda - Șeker - Angustura Bitter"
+        },
+        {
+          "isim": "Manhattan",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Joint Bourbon - Garrone Rosso - Angustura Bitter"
+        },
+        {
+          "isim": "Negroni",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Beefeater Cin - Garrone Rosso - Campari"
+        },
+        {
+          "isim": "Chilai Esresso Martini",
+          "fiyat": "700.00 ₺",
+          "açıklama": "Absolut Vanilya - Kahlua - Baker’s Field - Double Espresso"
+        }
+      ],
+      "Whisky (6cl)": [
+        {
+          "isim": "Chivas Regal 12 YO",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Chivas Regal 13 YO",
+          "fiyat": "800.00 ₺"
+        },
+        {
+          "isim": "Chivas Regal 15 YO",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Chivas Regal 18 YO",
+          "fiyat": "1,100.00 ₺"
+        },
+        {
+          "isim": "Chivas Regal Ultis",
+          "fiyat": "1,900.00 ₺"
+        },
+        {
+          "isim": "Royal Salute 21 YO",
+          "fiyat": "2,800.00 ₺"
+        },
+        {
+          "isim": "Chivas Regal 25 YO",
+          "fiyat": "5,250.00 ₺"
+        },
+        {
+          "isim": "Jameson",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Jameson Caskmates",
+          "fiyat": "800.00 ₺"
+        },
+        {
+          "isim": "Jameson Black Barrel",
+          "fiyat": "800.00 ₺"
+        },
+        {
+          "isim": "Ballantine’s 12 YO",
+          "fiyat": "700.00 ₺"
+        }
+      ],
+      "Şampanyalı Kokteyller (17 Cl)": [
+        {
+          "isim": "Breakfeast Mimoza",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Şampanya-Orange Jam"
+        },
+        {
+          "isim": "Bellini",
+          "fiyat": "850.00 ₺",
+          "açıklama": ""
+        },
+        {
+          "isim": "Kir Royal",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Şampanya-Creme de Casis"
+        },
+        {
+          "isim": "Rossini",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Şampanya-Taze Çilek Suyu"
+        },
+        {
+          "isim": "Aperol Spritz",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Şampanya-Aperol Likör"
+        },
+        {
+          "isim": "Passion Champagne",
+          "fiyat": "850.00 ₺",
+          "açıklama": "Şampanya-Passion"
+        }
+      ],
+      "Vodka (6 Cl)": [
+        {
+          "isim": "Absolut Blue",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Absolut Flavors",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Absolut Elyx",
+          "fiyat": "950.00 ₺"
+        }
+      ],
+      "Rom (6 Cl)": [
+        {
+          "isim": "Havana Club Anejo 3 Anos",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Havana Club Anejo 7 Years",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Havana Club Seleccion De Maestros",
+          "fiyat": "900.00 ₺"
+        }
+      ],
+      "Tekila (5 Cl)": [
+        {
+          "isim": "Olmeca Blanco",
+          "fiyat": "600.00 ₺"
+        }
+      ],
+      "Gin (6 Cl)": [
+        {
+          "isim": "Beefeater Cin",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Malfy Originale",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Malfy Con Limone",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Malfy Gın Rosa",
+          "fiyat": "900.00 ₺"
+        }
+      ],
+      "Malty Whisky (6 Cl)": [
+        {
+          "isim": "Aberlour Single Malt 12 YO",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Aberlour Single Malt 16 YO",
+          "fiyat": "1,500.00 ₺"
+        },
+        {
+          "isim": "Aberlour Single Malt 18 YO",
+          "fiyat": "2,000.00 ₺"
+        },
+        {
+          "isim": "Aberlour A Bunadh",
+          "fiyat": "2,000.00 ₺"
+        },
+        {
+          "isim": "Glenlivet Single Malt 12 YO",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Glenlivet Single Malt 15 YO",
+          "fiyat": "1,200.00 ₺"
+        },
+        {
+          "isim": "Glenlivet Single Malt 18 YO",
+          "fiyat": "1,500.00 ₺"
+        },
+        {
+          "isim": "Glenlivet Founder’s Reserve Single Malt",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "Talisker 12 YO",
+          "fiyat": "900.00 ₺"
+        },
+        {
+          "isim": "The Macallan 12 YO",
+          "fiyat": "1,100.00 ₺"
+        }
+      ],
+      "Cognac & Armagnac (5 Cl)": [
+        {
+          "isim": "Hennessy V.S",
+          "fiyat": "850.00 ₺"
+        },
+        {
+          "isim": "Hennessy V.S.O.P",
+          "fiyat": "950.00 ₺"
+        },
+        {
+          "isim": "Hennessy X.O",
+          "fiyat": "1,900.00 ₺"
+        },
+        {
+          "isim": "Remy Martin V.S.O.P",
+          "fiyat": "950.00 ₺"
+        },
+        {
+          "isim": "Remy Martin XO",
+          "fiyat": "1,900.00 ₺"
+        },
+        {
+          "isim": "Courvoisier V.S",
+          "fiyat": "850.00 ₺"
+        },
+        {
+          "isim": "Courvoisier V.S.O.P",
+          "fiyat": "950.00 ₺"
+        },
+        {
+          "isim": "Courvoisier X.O",
+          "fiyat": "1,900.00 ₺"
+        },
+        {
+          "isim": "Martell V.S",
+          "fiyat": "850.00 ₺"
+        },
+        {
+          "isim": "Martel V.S.O.P",
+          "fiyat": "950.00 ₺"
+        },
+        {
+          "isim": "Martel X.O",
+          "fiyat": "1,900.00 ₺"
+        },
+        {
+          "isim": "Metaxa 5 Stars-7 Stars",
+          "fiyat": "850.00 ₺"
+        }
+      ],
+      "Biralar (330 Ml)": [
+        {
+          "isim": "Efes Pilsen",
+          "fiyat": "400.00 ₺"
+        },
+        {
+          "isim": "Miller",
+          "fiyat": "400.00 ₺"
+        },
+        {
+          "isim": "Beck’s",
+          "fiyat": "400.00 ₺"
+        },
+        {
+          "isim": "Corona",
+          "fiyat": "450.00 ₺"
+        },
+        {
+          "isim": "Heineken",
+          "fiyat": "450.00 ₺"
+        },
+        {
+          "isim": "Leffe Blonde",
+          "fiyat": "450.00 ₺"
+        },
+        {
+          "isim": "Leffe Brune",
+          "fiyat": "450.00 ₺"
+        },
+        {
+          "isim": "Hoegaarden",
+          "fiyat": "450.00 ₺"
+        },
+        {
+          "isim": "Duvel",
+          "fiyat": "450.00 ₺"
+        }
+      ],
+      "Liqior (6 Cl)": [
+        {
+          "isim": "Baker’s Field",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Archers",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Safari",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Amarula",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Kahlua",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Amaretto Disaronno",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Jagermeister",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Southern Comfort",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Batida de Coco",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Passoa",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Cardinal Meloon",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Fernet Branca",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Malibu",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Limencello",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Campari",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Sambuca",
+          "fiyat": "700.00 ₺"
+        },
+        {
+          "isim": "Absinthe",
+          "fiyat": "700.00 ₺"
+        }
+      ]
+    },
+    "İçecekler": {
+      "Soğuk İçecekler": [
+        {
+          "isim": "Su (330 ml)",
+          "fiyat": "100.00 ₺"
+        },
+        {
+          "isim": "Su (750 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Coca Cola (250 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Coca Cola Light (330 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Coca Cola Zero (250 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Fanta (330 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Sprite (330 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Ice Tea Şeftali-Limon (250 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Ice Tea Limon-Şeftali Light (250 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Schweppes Mandalina-Tonik (250 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Ev Yapımı Taze Limonata (330 ml)",
+          "fiyat": "200.00 ₺"
+        },
+        {
+          "isim": "Ayran (Naneli-Fesleğenli) (330 ml)",
+          "fiyat": "200.00 ₺"
+        },
+        {
+          "isim": "Taze Sıkılmış Portakal-Nar Suyu (330 ml)",
+          "fiyat": "250.00 ₺"
+        },
+        {
+          "isim": "Ginger Ale (250 ml)",
+          "fiyat": "200.00 ₺"
+        },
+        {
+          "isim": "S. Pellegrino (250 ml)",
+          "fiyat": "200.00 ₺"
+        },
+        {
+          "isim": "S. Pellegrino (750 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Perrier (330 ml)",
+          "fiyat": "200.00 ₺"
+        },
+        {
+          "isim": "Perrier (750 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Soda (200 ml)",
+          "fiyat": "150.00 ₺"
+        },
+        {
+          "isim": "Red Bull (Sugar Free 250 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Red Bull Peach (Edition 250 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Red Bull White (Edition 250 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Red Bull Yellow (Edition 250 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Red Bull Blue (Edition 250 ml)",
+          "fiyat": "300.00 ₺"
+        },
+        {
+          "isim": "Ev Yapımı Ice Tea – Orman Meyveli",
+          "fiyat": "350.00 ₺"
+        },
+        {
+          "isim": "Ev Yapımı Ice Tea – Mandalina",
+          "fiyat": "350.00 ₺"
+        }
+      ],
+      "Alkolsüz Kokteyller": [
+        {
+          "isim": "Strawberry Virgin Colado",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Sweet Red",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Mangomint Cooler",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Alkolsüz Mojito",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Lime Cooler",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Fresh Frozen",
+          "fiyat": "500.00 ₺"
+        },
+        {
+          "isim": "Red Bull Twist",
+          "fiyat": "500.00 ₺"
+        }
+      ],
+      "Soğuk Kahveler": [
+        {
+          "isim": "Ice Latte",
+          "fiyat": "350.00 ₺",
+          "açıklama": "Çikolata-Fındık-Karamel-Tarçın"
+        },
+        {
+          "isim": "Damla Sakızlı Cappuccino",
+          "fiyat": "350.00 ₺"
+        },
+        {
+          "isim": "Frappuccinoo",
+          "fiyat": "350.00 ₺",
+          "açıklama": "Karamelli-Çikolatalı"
+        },
+        {
+          "isim": "Hindistan Cevizli Cappuccino",
+          "fiyat": "350.00 ₺"
+        },
+        {
+          "isim": "Iced Chocolate Mocca",
+          "fiyat": "350.00 ₺",
+          "açıklama": "Çikolata-Beyaz Çikolata"
+        }
+      ],
+      "Sıcak Kahveler": [
+        {
+          "isim": "Espresso",
+          "fiyat": "240.00 ₺"
+        },
+        {
+          "isim": "Caffe Macchiato",
+          "fiyat": "240.00 ₺",
+          "açıklama": "Süt"
+        },
+        {
+          "isim": "Türk Kahvesi",
+          "fiyat": "240.00 ₺"
+        },
+        {
+          "isim": "Damla Sakızlı Türk Kahvesi",
+          "fiyat": "240.00 ₺"
+        },
+        {
+          "isim": "Filtre Kahve",
+          "fiyat": "290.00 ₺"
+        },
+        {
+          "isim": "Double Espresso",
+          "fiyat": "290.00 ₺"
+        },
+        {
+          "isim": "Caffe Latte",
+          "fiyat": "290.00 ₺",
+          "açıklama": "Süt"
+        },
+        {
+          "isim": "Americano",
+          "fiyat": "290.00 ₺"
+        },
+        {
+          "isim": "Cafe Mocha",
+          "fiyat": "290.00 ₺",
+          "açıklama": "Süt"
+        },
+        {
+          "isim": "Cinnamon Dolce Latte",
+          "fiyat": "290.00 ₺",
+          "açıklama": "Süt"
+        },
+        {
+          "isim": "Sıcak Çikolata",
+          "fiyat": "290.00 ₺",
+          "açıklama": "Süt"
+        },
+        {
+          "isim": "Cappuccino",
+          "fiyat": "290.00 ₺",
+          "açıklama": "Tarçın-Karamel-Vanilya-Çikolata / Süt"
+        }
+      ],
+      "Çaylar": [
+        {
+          "isim": "Demleme Türk Çayı",
+          "fiyat": "100.00 ₺"
+        },
+        {
+          "isim": "Yeşil Çay",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Earl Grey",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Zencefilli Yeşil Çay",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Adaçayı",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Ihlamur",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Taze Elma Çayı",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Kuşburnu",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Rezene",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Papatya",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Taze Nane",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Kış Çayı",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Ballı Yeşil Çay",
+          "fiyat": "275.00 ₺"
+        },
+        {
+          "isim": "Yaseminli Yeşil Çay",
+          "fiyat": "275.00 ₺"
+        }
+      ]
+    }
+  }
